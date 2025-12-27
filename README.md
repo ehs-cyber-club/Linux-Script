@@ -129,8 +129,7 @@ def animate():
     global glow_pos, frame
     frame += 1
 
-    # force full black redraw (kills gray bleed)
-    canvas.itemconfig(fade_rect, fill=BLACK)
+    # full black backgrond (remove this if you want it grey-ish
 
     for i, layers in enumerate(glow_layers):
         d = abs(i - glow_pos)
